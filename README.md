@@ -10,10 +10,13 @@ It can be easily configured to handle multiple forms
 ## Installation
 
 ### Manually download
-Use this download link
+Use this (download link)[https://github.com/dekyfin-academy/contact-form-backend/archive/master.zip]
+Unzip the content into your project directory
 
 ### Git
-`git clone url`
+```bash
+git clone https://github.com/dekyfin-academy/contact-form-backend
+```
 
 ## Basic Usage
 1. Inlude the Javascript and CSS Files
