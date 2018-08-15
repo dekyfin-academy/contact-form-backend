@@ -18,7 +18,7 @@ It was originally intended for frontend developers who want a simple php form pr
 ## Installation
 
 ### Manual Download
-1. Use this [download link](archive/master.zip)
+1. Use this [download link](https://github.com/dekyfin-academy/contact-form-php/archive/master.zip)
 2. Unzip the content into your project directory
 
 ### Using Git
@@ -44,7 +44,10 @@ Note:
 3. It is recommended to create different configurations for different forms
 
 
-### Add form to your html code
+### Configure your form
+1. Add `form-processor` class to your form
+2. [optional] Add an element with class `form-output` to the form to display the output of the form processor
+
 ```html
 <form class="form-processor" action="/path/to/contact.php">
   <output class="form-output"></output>
@@ -53,7 +56,3 @@ Note:
   <textarea name="message" placeholder="Message"></textarea>
 </form>
 ```
-
-## Important
-- `form-processor` class must be present on the form
-- Add an element with class `form-output` to the form to display the output of the form processor
