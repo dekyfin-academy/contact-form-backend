@@ -1,31 +1,59 @@
-# contact-form-backend
+# contact-form-php
 A PHP/Ajax Contact form processor for your website
 
 ## Why This Project
-We created this project to provide an easily customizable PHP form processor with AJAX support.
-This project can be used as a general form processor with email capabilities.
-It is ideal for frontend developers who want a simple backend processor for their forms.
-It can be easily configured to handle multiple forms
+I created this project to provide an easily customizable PHP form processor with AJAX support.
+This project can be used as a general form processor with email-sending capability.
+It was originally intended for frontend developers who want a simple php form processor for their websites.
+
+
+## Features
+1. Sends form content using AJAX (No reloading)
+2. Nicely display output of form processor
+3. It can be configured to handle multiple forms
+4. Can be used to process any kind of form and sends form content as email
+5. ~~Anti-spam support~~: comming soon
+6. Depends on jquery
 
 ## Installation
 
-### Manually download
-Use this (download link)[https://github.com/dekyfin-academy/contact-form-backend/archive/master.zip]
-Unzip the content into your project directory
+### Manual Download
+1. Use this [download link](archive/master.zip)
+2. Unzip the content into your project directory
 
-### Git
+### Using Git
 ```bash
-git clone https://github.com/dekyfin-academy/contact-form-backend
+git clone https://github.com/dekyfin-academy/contact-form-php
 ```
 
 ## Basic Usage
-1. Inlude the Javascript and CSS Files
-2. Configure your forms
-3. Configure the php script
-  1. Clone contact.template.php to contact.php or any other name of your choice. Make sure your form points to the right file
-  2. Set the relevant variables
-  
-## Advanced Usage
-1. Setting spamtrap
-2. Using variables in templates
-  
+### Inlude the Javascript and CSS Files
+```html
+<link rel="stylesheet" type="text/css" href="path/to/css/form.css" >
+
+<script src="path/to/js/jquery.js" defer async></script>
+<script src="path/to/js/form.js" defer async></script>
+```
+Note:
+- the javascript file must be included after jquery
+- For best performance add script just before `</body>` (closing body tag)
+
+### Configure form processor
+1. Duplicate `php/config.sample.php` to `php/contact.php`.
+2. Configure `php/contact.php` as desired. Comments are provided in the file to guide you with the configuration
+3. It is recommended to create different configurations for different forms
+
+
+### Add form to your html code
+```html
+<form class="form-processor" action="/path/to/contact.php">
+  <output class="form-output"></output>
+  <input name="name" type="text" placeholder="Your name" required />
+  <input name="email" type="email" placeholder="Email Address" required />
+  <textarea name="message" placeholder="Message"></textarea>
+</form>
+```
+
+## Important
+- `form-processor` class must be present on the form
+- Add an element with class `form-output` to the form to display the output of the form processor
