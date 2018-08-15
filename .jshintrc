@@ -1,0 +1,14 @@
+{
+	"browser": true,
+	"jquery": true,
+	"esversion": 5,
+	"asi": true,
+	"laxbreak": true,
+	"strict": "global",
+	"expr": true,
+	"unused": "vars",
+	"maxcomplexity": 10,
+	"maxdepth": 3,
+	"maxparams": 4,
+	"nonew": true
+}
