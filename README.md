@@ -26,7 +26,7 @@ It was originally intended for frontend developers who want a simple php form pr
 git clone https://github.com/dekyfin-academy/contact-form-php
 ```
 
-## Basic Usage
+## Usage
 ### Inlude the Javascript and CSS Files
 ```html
 <link rel="stylesheet" type="text/css" href="path/to/css/form.css" >
@@ -46,7 +46,8 @@ Note:
 
 ### Configure your form
 1. Add `form-processor` class to your form
-2. [optional] Add an element with class `form-output` to the form to display the output of the form processor
+2. Ensure the form's `action` attribute points to the the configuration file
+3. [optional] Add an element with class `form-output` to the form to display the output of the form processor
 
 ```html
 <form class="form-processor" action="/path/to/contact.php">

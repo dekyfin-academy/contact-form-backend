@@ -34,7 +34,7 @@
 	background: #29b;
 	color: #fff;
 }
-#form-notices .form-notice.failure
+#form-notices .form-notice.failure,
 .form-output[msg-status=false]{
 	background: #c33;
 	color: #fff;
